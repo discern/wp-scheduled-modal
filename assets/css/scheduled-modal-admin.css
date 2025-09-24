@@ -1,0 +1,226 @@
+.kwp-modal-incomplete td {
+    background-color: #f0f0f0;
+}
+
+.kwp-modal-active .row-title:after {
+    content: ' (Active)';
+    color: #28a745;
+    font-weight: normal;
+}
+
+.kwp-modal-upcoming .row-title:after {
+    content: ' (Upcoming)';
+    color: #f60;
+    font-weight: normal;
+}
+
+.kwp-modal-expired .row-title:after {
+    content: ' (Expired)';
+    color: #6c757d;
+    font-weight: normal;
+}
+
+.kwp-modal-incomplete .row-title:after {
+    content: ' (Incomplete)';
+    color: #dc3545;
+    font-weight: normal;
+}
+
+p.notice.kwp-notice {
+    margin: 1rem 0;
+    padding: 0.625rem 1rem;
+    font-weight: 500;
+    position: relative;
+}
+
+p.notice.notice-info.kwp-notice {
+    background: #f3f4f9 !important;
+}
+
+p.notice.notice-success.kwp-notice {
+    background: #d4edda !important;
+}
+
+p.notice.notice-warning.kwp-notice {
+    background: #fff5d8 !important;
+    font-weight: 600;
+}
+
+p.notice.kwp-icon {
+    padding-left: 2.5rem;
+}
+
+p.notice.kwp-icon > span {
+    position: absolute;
+    left: 0.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.125rem;
+    text-align: center;
+    margin-right: 0.25rem;
+    color: #666;
+    line-height: 0;
+}
+
+.kwp-meta-flex {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+    .kwp-meta-flex {
+        display: block; /* block for smaller screens */
+    }
+}
+
+.kwp-meta-flex > div {
+    flex: 1;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.kwp-meta-flex > div > .kwp-meta-flex {
+    margin: 0.75rem 0;
+}
+
+#kwp-modal-metabox-form input + small,
+#kwp-modal-metabox-form textarea + small {
+    display: block;
+    color: #666;
+    font-style: italic;
+}
+
+.kwp-meta-flex > div > label {
+    display: block
+}
+
+.kwp-meta-image-preview {
+    width: 100%;
+    display: block;
+    line-height: 0;
+    border: 1px solid #ccc;
+}
+
+.wp-picker-container {
+    position: relative;
+    width: 100% !important;
+}
+
+.wp-picker-container button {
+    width: 100% !important;
+}
+
+.wp-picker-container span {
+    text-align: left !important;
+}
+
+#kwp-modal-image-preview {
+    position: relative;
+    border: 15px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 1rem 2rem;
+    padding: 0 0 56.25%;
+}
+
+#kwp-modal-image-preview > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+}
+
+#kwp-image-overlay {
+    bottom: 0;
+    box-sizing: border-box;
+    color: white;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.3s ease;
+}
+
+.kwp-modal-text-preview {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 33%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.kwp-modal-text-preview > div {
+    flex: 1;
+    font-size: 0.7vw;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.kwp-modal-text-preview > div:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1vw;
+    line-height: 1.2;
+}
+
+@media (min-width: 851px) and (max-width: 1200px) {
+    .kwp-modal-text-preview > div {
+        font-size: 1.2vw;
+    }
+
+    .kwp-modal-text-preview > div:first-child {
+        font-size: 1.4vw;
+    }
+}
+
+.kwp-modal-text-preview.kwp-modal-text-light {
+    color: #fff;
+}
+
+.kwp-modal-text-preview.kwp-modal-text-dark {
+    color: #000;
+}
+
+.kwp-modal-text-preview.kwp-modal-text-light.kwp-modal-text-shadow > div {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.kwp-modal-text-preview.kwp-modal-text-dark.kwp-modal-text-shadow > div {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.kwp-button:hover,
+.kwp-button:focus,
+.kwp-button:active {
+    color: #fff;
+}
+
+.kwp-preview-note {
+    background: #ffc;
+    border: 1px solid #dda;
+    color: #666;
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 2rem;
+    padding: 0.5rem;
+}
+
+.kwp-preview-note strong {
+    color: #000;
+    font-weight: bold;
+}
