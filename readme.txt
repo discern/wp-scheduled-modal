@@ -2,7 +2,7 @@
 Contributors: discern
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Stable tag: 1.2.10
+Stable tag: 1.2.11
 Requires PHP: 8.3
 Tags: popup, modal, announcement, promotion, schedule
 Tested up to: 6.8

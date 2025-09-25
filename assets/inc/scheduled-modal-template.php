@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
      id="<?php echo esc_attr($cookie_name) ?>"
      data-delay="<?php echo esc_attr($delay) ?>"
      data-suppress="<?php echo esc_attr($suppress) ?>"
-     data-endts="<?php echo esc_attr($endts ?? '') ?>"
+     data-ends="<?php echo esc_attr($ends ?? '') ?>"
      style="display:none"
 >
     <div

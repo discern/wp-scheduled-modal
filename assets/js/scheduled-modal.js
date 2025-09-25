@@ -72,6 +72,8 @@
             const endTimestamp = modal.data('ends'); // Get end time from data attribute
             const expires = new Date(Date.now() + suppress).toUTCString();
 
+            console.error('endTimestamp:', new Date(endTimestamp).toString());
+
             // Check if modal should be shown
             if (!isModalSuppressed(modalId) && !isModalExpired(endTimestamp)) {
                 setTimeout(() => {

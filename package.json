@@ -1,6 +1,6 @@
 {
   "name": "scheduled-modal-js",
-  "version": "1.2.10",
+  "version": "1.2.11",
   "description": "Minify Scheduled Modal JS & CSS",
   "private": true,
   "scripts": {

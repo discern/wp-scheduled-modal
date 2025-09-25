@@ -4,7 +4,7 @@
  * Plugin Name: Scheduled Modal
  * Plugin URI: https://github.com/discern/wp-scheduled-modal
  * Description: Allows scheduling popups/modals to appear/disappear at specific times. Supports background images, gradients, internal and external links and more!
- * Version: 1.2.10
+ * Version: 1.2.11
  * Author: Discern
  * License: GPL3
  * Text Domain: scheduled-modal
