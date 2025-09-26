@@ -1,6 +1,6 @@
 {
   "name": "scheduled-modal-js",
-  "version": "1.2.11",
+  "version": "1.2.12",
   "description": "Minify Scheduled Modal JS & CSS",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
     "build": "yarn run clean && yarn run minify:js && yarn run minify:css",
     "watch": "chokidar 'assets/js/!(*.min).js' 'assets/css/!(*.min).css' -c 'yarn run build'",
     "version-bump": "php bump-version.php",
-    "release": "yarn build && yarn version-bump && VERSION=$(yarn --silent get-version) && git add . && git commit -m \"Bump version to v$VERSION\" && git tag \"v$VERSION\" && git push origin main --tags && gh release create \"v$VERSION\" --generate-notes"
+    "_release": "yarn build && yarn version-bump && VERSION=$(yarn --silent get-version) && git add . && git commit -m \"Bump version to v$VERSION\" && git tag \"v$VERSION\" && git push origin main --tags && gh release create \"v$VERSION\" --generate-notes",
+    "release": "orig=$(pwd) && cd .. && tar -czf release-$(date +%Y%m%d-%H%M%S).tar.gz $(basename \"$orig\") && cd \"$orig\" && yarn _release"
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
